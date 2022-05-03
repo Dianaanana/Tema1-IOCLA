@@ -1,0 +1,83 @@
+**Ciocoiu Diana Iulia**
+**313 CA**
+
+ o            o
+  \          /
+   \        /
+    :-'""'-:
+ .-'  ____  `-.
+( (  (_()_)  ) )
+ `-.   ^^   .-'
+    `._==_.'
+seg  __)(___ fault
+
+## Momente disperate + tema 1
+
+### Descriere:
+
+* Scurtă descriere a funcționalității temei
+
+Acest cod reprezinta o implementare de vector generic, in cadrul caruia
+elementele au dimensiuni diferite. Fiecare element are asociat o structura
+head, de o lungime fixa, ce stocheaza tipul dedicatiei (dedicatiile sunt 
+de 3 tipuri) si lungimea efectiva a datelor ( nume1 suma1 suma2 nume2) si
+o structura data_structure ce stocheaza datele efective.
+
+Pentru a manipula vectorul generic am creat 6 functii:
+
+(0) - INSERT - functia ce imi insereaza un element nou in vector la final.
+    -parsez datele si le stochez in niste variabile auxiliare. Calculez 
+    lungimea efectiva a datelor APOI aloc memorie pt data_structure.
+    -parcurg tot vectorul pentru a ajunge la final
+    -realoc vectorul pentru a face loc pt elementul adaugat
+    -copiez datele in vector
+
+(1) - INSERT_AT - functia ce imi insereaza un element nou in vector la un
+                anumit index.
+    -asemanatoare cu INSERT.
+    -parcurg vectorul pana la index
+    -shiftez restul elementelor pentru a face loc noului element
+    -il introduc
+
+(2) - DELETE_AT - functia care imi sterge un element din vector de la un
+                anumit index
+    -parcurg vectorul pana la element
+    -shiftez restul elementelor de dupa pentru a-l elimina
+
+(3) - FIND - functia care imi printeaza un element din vector de la un 
+            anumit index
+    -parcurg vectorul pana la element
+    -il printez
+
+(4) - PRINT - functia care imi printeaza toate elementele din vector
+    -asemanatoare cu FIND
+    -parcurg tot vectorul si printez fiecare element
+
+(5) - EXIT - functia care incheie programul si elibereaza memoria
+
+
+* Eventuale explicații suplimentare pentru anumite părți din temă ce crezi
+că nu sunt suficient de clare doar urmărind codul
+
+(a) - parcurgerea vectorului se face cu un iterator te tip char* (daca lucram
+    direct cu void *array nu ma puteam folosi de aritmetica pointerilor).
+    Accesez pe rand campul len din cadrul fiecarui element ca sa stiu cat sa sar
+    pentru a ajunge la urmatorul element
+
+(b) - 
+
+### Comentarii asupra temei:
+
+* Crezi că ai fi putut realiza o implementare mai bună?
+    -  da.
+    - M-as fi putut folosi de implementarea functiei find pentru functia print
+    (print = find de fiecare element).
+
+* Ce ai invățat din realizarea acestei teme?
+    - lucru cu memoria
+    - aritmetica pointerilor
+    - alocarea memoriei
+    - parsare de comenzi
+
+
+
